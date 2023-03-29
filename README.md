@@ -1,2 +1,3 @@
-# ddd-django
-DjangoによるDDD実装のサンプルコード
+# python-clean-architecture
+
+clean-architecture sample

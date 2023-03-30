@@ -1,0 +1,20 @@
+{
+  "pythonVersion": "3.11",
+  "include": [
+    "nrslib_sample",
+  ],
+  "exclude": [
+    "**/.ipynb_checpoints",
+    "**/__pycache__",
+    "typings",
+    "venv",
+    ".venv"
+  ],
+  "ignore": [],
+  "reportUnusedImport": "information",
+  "reportMissingImports": "information",
+  "reportUnknownMemberType": "information",
+  "reportOptionalCall": "information",
+  "reportUnknownVariableType": "none",
+  "reportImportCycles": "information"
+}

@@ -1,5 +1,5 @@
 from abc import ABCMeta, abstractmethod
-from nrslib_sample.use_cases.user.user_create_input_data import UserCreateInputData
+from use_cases.user.user_create_input_data import UserCreateInputData
 
 
 class InterfaceUserCreateUseCase(ABCMeta):

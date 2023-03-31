@@ -1,6 +1,7 @@
-class UserCreateInputData:
-    user_name: str
+from dataclasses import dataclass
 
-    def __init__(self, user_name: str) -> None:
-        """ DTO (Data Transfer Object) """
-        self.user_name = user_name
+
+@dataclass
+class UserCreateInputData:
+    """ DTO (Data Transfer Object) """
+    user_name: str

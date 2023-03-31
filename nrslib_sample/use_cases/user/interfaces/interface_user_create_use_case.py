@@ -2,7 +2,7 @@ from abc import ABCMeta, abstractmethod
 from use_cases.user.user_create_input_data import UserCreateInputData
 
 
-class InterfaceUserCreateUseCase(ABCMeta):
+class InterfaceUserCreateUseCase(metaclass=ABCMeta):
     """"""
 
     @abstractmethod

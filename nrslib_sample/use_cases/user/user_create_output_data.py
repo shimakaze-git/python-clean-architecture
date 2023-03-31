@@ -1,10 +1,10 @@
+from dataclasses import dataclass
 from datetime import datetime
 
 
+@dataclass
 class UserCreateOutputData:
-    usre_id: str
-    created: datetime
+    """ DTO (Data Transfer Object) """
 
-    def __init__(self, usre_id: str, created: datetime) -> None:
-        self.usre_id = usre_id
-        self.created = created
+    user_id: str
+    created: datetime

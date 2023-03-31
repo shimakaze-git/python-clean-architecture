@@ -1,9 +1,9 @@
 from abc import ABCMeta, abstractmethod
 
-from nrslib_sample.domain.entities.user import User
+from domain.entities.user import User
 
 
-class InterfaceUserRepository(ABCMeta):
+class InterfaceUserRepository(metaclass=ABCMeta):
     """"""
 
     @abstractmethod

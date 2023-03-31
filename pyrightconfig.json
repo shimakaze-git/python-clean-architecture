@@ -11,10 +11,11 @@
     ".venv"
   ],
   "ignore": [],
-  "reportUnusedImport": "information",
-  "reportMissingImports": "information",
-  "reportUnknownMemberType": "information",
-  "reportOptionalCall": "information",
-  "reportUnknownVariableType": "none",
-  "reportImportCycles": "information"
+  "reportInconsistentConstructor": "information"
+  // "reportUnusedImport": "information",
+  // "reportMissingImports": "information",
+  // "reportUnknownMemberType": "information",
+  // "reportOptionalCall": "information",
+  // "reportUnknownVariableType": "none",
+  // "reportImportCycles": "information"
 }

@@ -6,7 +6,7 @@ from dataclasses import dataclass
 # (frozen=True, eq=True)
 @dataclass
 class User:
-    identifier: str | None = None
+    identifier: str = ""
     name: str = ""
 
     def __init__(self, identifier: str | None = None, name: str = "") -> None:

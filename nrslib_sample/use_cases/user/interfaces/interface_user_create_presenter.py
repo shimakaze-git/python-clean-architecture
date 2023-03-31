@@ -2,7 +2,7 @@ from abc import ABCMeta, abstractmethod
 from use_cases.user.user_create_output_data import UserCreateOutputData
 
 
-class IUserCreatePresenter(ABCMeta):
+class InterfaceUserCreatePresenter(metaclass=ABCMeta):
     """"""
 
     @abstractmethod

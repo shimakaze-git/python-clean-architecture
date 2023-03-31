@@ -1,5 +1,7 @@
+from datetime import datetime
+
 from use_cases.user.interfaces.interface_user_create_use_case import InterfaceUserCreateUseCase
-from use_cases.user.interfaces.interface_user_create_presenter import IUserCreatePresenter
+from use_cases.user.interfaces.interface_user_create_presenter import InterfaceUserCreatePresenter
 from use_cases.user.user_create_input_data import UserCreateInputData
 from use_cases.user.user_create_output_data import UserCreateOutputData
 from domain.interfaces.interface_user_repository import InterfaceUserRepository
@@ -11,7 +13,7 @@ class UserCreateInteractor(InterfaceUserCreateUseCase):
     """"""
 
     _user_repository: InterfaceUserRepository
-    _presenter: IUserCreatePresenter
+    _presenter: InterfaceUserCreatePresenter
 
     # def __new__(cls, user_repository: InterfaceUserRepository, presenter: IUserCreatePresenter):
     #     return super().__new__(cls)
@@ -19,7 +21,7 @@ class UserCreateInteractor(InterfaceUserCreateUseCase):
     # def __new__(cls, *args, **kwargs):
     #     return super().__new__(cls)
 
-    def __init__(self, user_repository: InterfaceUserRepository, presenter: IUserCreatePresenter) -> None:
+    def __init__(self, user_repository: InterfaceUserRepository, presenter: InterfaceUserCreatePresenter) -> None:
 
         self._user_repository = user_repository
         self._presenter = presenter
@@ -38,8 +40,5 @@ class UserCreateInteractor(InterfaceUserCreateUseCase):
         user: User = User(name=user_name)
         self._user_repository.save(user)
 
-        # output_data: UserCreateOutputData = UserCreateOutputData()
-        print("UserCreateOutputData", UserCreateOutputData)
-
-        # var outputData = new UserCreateOutputData(user.Id, DateTime.Now);
-        # presenter.Complete(outputData);
+        output_data: UserCreateOutputData = UserCreateOutputData(user.identifier, datetime.now())
+        self._presenter.complete(output_data)

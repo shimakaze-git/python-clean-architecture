@@ -1,5 +1,5 @@
-from domain.interfaces.interface_user_repository import InterfaceUserRepository
-from domain.entities.user import User
+from nrslib_sample.domain.interfaces.interface_user_repository import InterfaceUserRepository
+from nrslib_sample.domain.entities import User
 
 
 class InMemoryUserRepository(InterfaceUserRepository):

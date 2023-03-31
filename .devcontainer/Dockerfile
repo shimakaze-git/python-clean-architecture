@@ -1,6 +1,6 @@
 FROM python:3.11-rc-slim
 
-ENV PYTHONPATH /workspaces/recustomer-auth
+ENV PYTHONPATH /workspaces/python-clean-architecture
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends --allow-unauthenticated \

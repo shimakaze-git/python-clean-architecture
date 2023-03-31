@@ -1,12 +1,12 @@
 from datetime import datetime
 
-from use_cases.user.interfaces.interface_user_create_use_case import InterfaceUserCreateUseCase
-from use_cases.user.interfaces.interface_user_create_presenter import InterfaceUserCreatePresenter
-from use_cases.user.user_create_input_data import UserCreateInputData
-from use_cases.user.user_create_output_data import UserCreateOutputData
-from domain.interfaces.interface_user_repository import InterfaceUserRepository
+from nrslib_sample.use_cases.interfaces.interface_user_create_use_case import InterfaceUserCreateUseCase
+from nrslib_sample.use_cases.interfaces.interface_user_create_presenter import InterfaceUserCreatePresenter
+from nrslib_sample.use_cases.user_create_input_data import UserCreateInputData
+from nrslib_sample.use_cases.user_create_output_data import UserCreateOutputData
+from nrslib_sample.domain.interfaces.interface_user_repository import InterfaceUserRepository
 
-from domain.entities.user import User
+from nrslib_sample.domain.entities import User
 
 
 class UserCreateInteractor(InterfaceUserCreateUseCase):

@@ -1,6 +1,7 @@
 ![./clean_architecture.png](./clean_architecture.png)
 
-[実装クリーンアーキテクチャ](https://qiita.com/nrslib/items/a5f902c4defc83bd46b8)
+- [実装クリーンアーキテクチャ](https://qiita.com/nrslib/items/a5f902c4defc83bd46b8)
+- [ツールで防衛 クリーンアーキテクチャ / CleanArchitecture](https://speakerdeck.com/nrslib/cleanarchitecture)
 
 # Enterprise Business Rules
 
